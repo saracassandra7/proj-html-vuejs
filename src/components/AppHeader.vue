@@ -1,6 +1,14 @@
 <script>
+import menu from '../assets/data/header-menu'
+
 export default {
-  name: 'AppHeader'
+  name: 'AppHeader',
+
+  data(){
+    return{
+      menu
+    }
+  }
 
 }
 </script>
@@ -11,7 +19,20 @@ export default {
       <div class="logo">
         <img src="/logo.png" alt="logo">
       </div>
-      <div class="menu">MENU</div>
+      <div class="menu d-flex align-items-center">
+        <nav class="pt-3">
+          <ul>
+            <li class="text-capitalize" v-for="(link, index) in menu" :key="index">
+              <a class="text-white" href="#">{{link.text}}</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="my-btn ms-3 me-4">join us</div>
+        <div class="search ms-2">
+          <i class="fa-solid fa-magnifying-glass text-white"></i>
+        </div>
+      </div>
     </div>
 
 
@@ -31,6 +52,35 @@ header{
   @include centerFlex('vertical');
   justify-content: space-between;
   height: 100%;
+
+  .logo img{
+    width: 220px;
+  }
+
+  .menu{
+    @include menuBasic();
+
+    
+    ul{
+     @include centerFlex('vertical');
+    
+    }
+
+    .my-btn{
+      background-color: black;
+      @include btnStyle();
+      &:hover{
+        background-color: rgba($color: #000000, $alpha: .8);
+      }
+
+    }
+
+    i{
+      cursor: pointer;
+    }
+
+    
+  }
 }
 }
 

@@ -3,6 +3,10 @@
     list-style: none;
   }
 
+  li{
+    padding: 15px;
+  }
+
   a{
     text-decoration: none;
   }
@@ -20,4 +24,13 @@
     align-items: center;
   }
 
+}
+
+@mixin btnStyle(){
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-size: .75rem;
+  cursor: pointer;
 }
