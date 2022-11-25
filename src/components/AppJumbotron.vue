@@ -27,6 +27,7 @@ export default {
       </div>
     </div>
   </div>
+
 </div>
   
 </template>
@@ -68,7 +69,6 @@ export default {
         width: 200px;
         text-align: center;
         font-size: 1rem;
-        
       }
     }
   };
@@ -94,12 +94,7 @@ export default {
       margin-top: 20px;
       line-height: 150%;
       font-size: 1.5rem;
-
     }
   }
-
-  
 }
-
-
 </style>
