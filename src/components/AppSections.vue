@@ -13,7 +13,11 @@ export default {
 </script>
 
 <template>
-<h3 class="text-center">Forum Sections</h3>
+<div class="title text-center">
+  <span>phasellus eget metus</span>
+  <h2>Forum Sections</h2>
+
+</div>
 
 <div v-for="(card, index) in cards" :key="index" class="col-3">
   <div class="my-card me-4">
@@ -28,6 +32,9 @@ export default {
 
 <style lang="scss" scoped>
 @use '../styles/partials/mixin' as *;
+.title{
+ @include titleStyle()
+}
 
 .my-card{
   height: 170px;
@@ -36,6 +43,7 @@ export default {
   border-top: 3px solid #9cdae3;
   @include centerFlex('both');
   flex-direction: column;
+  cursor: pointer;
 
   .icon{
     height: 50px;

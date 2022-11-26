@@ -15,7 +15,10 @@ export default {
 </script>
 
 <template>
-<h3 class="text-center">news</h3>
+<div class="title text-center">
+  <span>phasellus eget metus</span>
+  <h2>All the latest news</h2>
+</div>
 
 <div class="col-4" v-for="article in topNews" :key="article.id">
   <div class="article">
@@ -63,6 +66,10 @@ export default {
 
 <style lang="scss" scoped>
 @use '../styles/partials/mixin' as *;
+
+.title{
+  @include titleStyle()
+}
 
 .article{
 

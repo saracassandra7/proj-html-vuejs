@@ -34,3 +34,34 @@
   font-size: .75rem;
   cursor: pointer;
 }
+
+@mixin titleStyle(){
+  margin-top: 60px;
+  margin-bottom: 40px;
+
+  span{
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+    font-size: .6rem;
+    font-weight: bold;
+  }
+
+  h2{
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 15px;
+    position: relative;
+    margin-bottom: 40px;
+
+    &::after{
+      position: absolute;
+      content: "";
+      height: 2px;
+      background-color: #f7c8b6;
+      width: 70px;
+      margin-left: 15px;
+      top: 65px;
+      left: 45%;
+    }
+  }
+}
