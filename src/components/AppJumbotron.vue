@@ -6,7 +6,8 @@ export default {
 </script>
 
 <template>
-<div class="jumbotron">
+<div class="jumbo">
+  <div class="jumbotron">
   <div class="my-container">
 
     <div class="jumbo-content">
@@ -29,6 +30,8 @@ export default {
   </div>
 
 </div>
+</div>
+
   
 </template>
 
@@ -36,7 +39,10 @@ export default {
 @use '../styles/partials/mixin' as *;
 @use '../styles/partials/vars' as *;
 
-.jumbotron{
+.jumbo{
+  height: 900px;
+
+  .jumbotron{
   height: 600px;
   background-image: url(../assets/images/home_slider_bg.jpg);
   background-position: center;
@@ -76,6 +82,7 @@ export default {
   .jumbo-container{
     background-color: #eee3d6;
     height: 300px;
+    
     color: grey;
     @include centerFlex('vertical');
 
@@ -97,4 +104,7 @@ export default {
     }
   }
 }
+}
+
+
 </style>

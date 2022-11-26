@@ -22,17 +22,22 @@ export default {
   <div class="row">
     <AppNews/>
   </div>
+  
+</div>
 
-  <div class="row">
+<div class="container-fluid colored">
+  <div class="my-container">
+    <div class="row">
     <AppSections/>
   </div>
-  
+  </div>
 </div>
 </template>
 
 <style lang="scss" scoped>
-.my-container{
-  margin-top: 320px;
+
+.colored{
+  background-color: #f2f2f2;
 }
 
 </style>

@@ -16,22 +16,45 @@ export default {
 <h3 class="text-center">Forum Sections</h3>
 
 <div v-for="(card, index) in cards" :key="index" class="col-3">
-  <div class="my-card">
+  <div class="my-card me-4">
     <div class="icon">
       <i :class="card.icon"></i>
     </div>
-    <span>{{card.text}}</span>
+    <span class="fw-bold">{{card.text}}</span>
 
   </div>
 </div>
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/partials/mixin' as *;
+
 .my-card{
-  background-color: aqua;
+  height: 170px;
+  background-color: white;
   margin-bottom: 30px;
-  text-align: center;
-  border-top: 2px solid green;
+  border-top: 3px solid #9cdae3;
+  @include centerFlex('both');
+  flex-direction: column;
+
+  .icon{
+    height: 50px;
+    width: 50px;
+    background-color: #ff8d61;
+    border-radius: 50%;
+    @include centerFlex('both');
+    margin-bottom: 15px;
+
+    i{
+      color: white;
+      font-size: 1.3rem;
+    }
+  }
+
+  span{
+    font-size: 1.1rem;
+
+  }
   
 }
 
