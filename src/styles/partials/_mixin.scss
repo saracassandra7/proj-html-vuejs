@@ -65,3 +65,22 @@
     }
   }
 }
+
+@mixin blackStripe(){
+  
+    height: 100px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    p{
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: .8rem;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+}
