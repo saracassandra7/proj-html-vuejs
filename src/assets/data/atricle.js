@@ -59,4 +59,31 @@ const bottomNews = [
   }
 ]
 
-export {topNews, bottomNews};
+const tutorials =[
+  {
+    id: '1',
+    imgPath: 'images/post_feat_img_23-320x202.jpg',
+    alt: 'rounded watch',
+    title: 'Ut sunt accusantium esse ipsum animi',
+    date: 'October 11th, 2015',
+    comments: 'Comments Off'
+  },
+  {
+    id: '2',
+    imgPath: 'images/post_feat_img_22-320x202.jpg',
+    alt: 'tablet',
+    title: 'Asperiores laudantium nisi facilis nobis',
+    date: 'October 11th, 2015',
+    comments: 'Comments Off'
+  },
+  {
+    id: '3',
+    imgPath: 'images/post_feat_img_20-320x202.jpg',
+    alt: 'pc',
+    title: 'Vero repellat temporibus ipsum possimus',
+    date: 'October 11th, 2015',
+    comments: 'Comments Off'
+  }
+]
+
+export {topNews, bottomNews, tutorials};

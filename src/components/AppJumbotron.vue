@@ -80,7 +80,7 @@ export default {
   };
 
   .jumbo-container{
-    background-color: #eee3d6;
+    background-color: $bg-colored;
     height: 300px;
     
     color: grey;

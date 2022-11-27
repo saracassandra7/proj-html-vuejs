@@ -1,6 +1,7 @@
 <script>
 import AppJumbotron from './AppJumbotron.vue'
 import AppNews from './AppNews.vue'
+import AppTutorials from './AppTutorials.vue'
 import AppSections from './AppSections.vue'
 
 export default {
@@ -9,6 +10,7 @@ export default {
   components:{
     AppJumbotron,
     AppNews,
+    AppTutorials,
     AppSections
   }
 
@@ -21,6 +23,10 @@ export default {
 <div class="my-container">
   <div class="row">
     <AppNews/>
+  </div>
+
+  <div class="row">
+    <AppTutorials/>
   </div>
   
 </div>
@@ -35,9 +41,11 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/partials/vars' as *;
 
 .colored{
-  background-color: #f2f2f2;
+  background-color: $bg-colored;
+  padding-bottom: 80px;
 }
 
 </style>
