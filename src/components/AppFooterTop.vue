@@ -9,7 +9,7 @@ export default {
   <footer>
     <div class="top">
       <div class="content-top text-center">
-        <h2 class="fw-bold">Hey! Join to our Community</h2>
+        <h2>Hey! Join to our Community</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At facilis expedita tenetur ut quia hic dolorum.</p>
         <div class="my-btn">
          sign up <i class="fa-solid fa-chevron-right"></i>
@@ -53,6 +53,7 @@ footer{
 
       h2{
         font-size: 3rem;
+        font-weight: 900;
       }
 
       p{

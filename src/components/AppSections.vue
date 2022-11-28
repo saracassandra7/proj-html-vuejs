@@ -24,7 +24,7 @@ export default {
     <div class="icon">
       <i :class="card.icon"></i>
     </div>
-    <span class="fw-bold text-center">{{card.text}}</span>
+    <span class="text-center">{{card.text}}</span>
 
   </div>
 </div>
@@ -61,6 +61,7 @@ export default {
 
   span{
     font-size: 1.1rem;
+    font-weight: 900;
   }
   
 }

@@ -11,7 +11,7 @@ export default {
   <div class="my-container">
 
     <div class="jumbo-content">
-      <h1 class="fw-bold mt-5">Tech Forum!</h1>
+      <h1 class="mt-5">Tech Forum!</h1>
        <span>Discuss all the latest technology news and trends</span>
       <div class="my-btn">
        get avada now! <i class="fa-solid fa-chevron-right"></i>
@@ -60,8 +60,9 @@ export default {
       width: 100%;
 
       h1{
-        font-size: 8.3rem;
+        font-size: 8rem;
         color: white;
+        font-weight: 900;
       }
 
       span{

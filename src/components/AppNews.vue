@@ -26,7 +26,7 @@ export default {
       <img :src="article.imgPath" :alt="article.alt">
     </div>
     <div class="text">
-      <h6 class="fw-bold mb-1">{{article.title}}</h6>
+      <h6 class="mb-1">{{article.title}}</h6>
       <span class="info">{{article.date}} | {{article.comments}}</span>
       <p class="description mt-2">{{article.description}}</p>
     </div>
@@ -38,7 +38,7 @@ export default {
   <div class="adv me-4">
     <div class="adv-content">
       <span class="text-uppercase fw-bold">featured article</span>
-      <h3 class="fw-bold mt-3 mb-3">Cras malesuada et orci eget pharetra</h3>
+      <h2 class="mt-3 mb-3">Cras malesuada et orci eget pharetra</h2>
       <p>Ipsum exercitationem nostrum possimus aperiam sed, quod repellat aliquid tenetur harum tempore rerum, debitis sit? Ipsam velit dolores odio placeat fugit ipsa.</p>
       <div class="my-btn">
        read more <i class="fa-solid fa-chevron-right"></i>
@@ -54,7 +54,7 @@ export default {
       <img :src="article.imgPath" :alt="article.alt">
     </div>
     <div class="text">
-      <h6 class="fw-bold mb-1">{{article.title}}</h6>
+      <h6 class="mb-1">{{article.title}}</h6>
       <span class="info">{{article.date}} | {{article.comments}}</span>
       <p class="description mt-2">{{article.description}}</p>
     </div>
@@ -113,6 +113,10 @@ export default {
       letter-spacing: .3rem;
     }
 
+    h2{
+      font-weight: 900;
+    }
+
     .my-btn{
       @include btnStyle();
       background-color: black;
@@ -122,6 +126,10 @@ export default {
     }
   }
 
+}
+
+h6{
+  font-weight: 900;
 }
 
 </style>

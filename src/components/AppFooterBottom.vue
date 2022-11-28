@@ -90,7 +90,6 @@ export default {
     h6{
       text-transform: uppercase;
       font-weight: 900;
-      font-size: .9rem;
     }
 
     p{
@@ -108,7 +107,7 @@ export default {
 
         li{
           padding: 10px 0;
-          border-bottom:  1px solid rgb(224, 224, 224);
+          border-bottom:  1px solid rgb(231, 231, 231);
           height: 70px;
 
           i{
@@ -130,12 +129,12 @@ export default {
 }
 
 .socials{
-  border-top: 1px solid rgb(224, 224, 224);
+  border-top: 1px solid rgb(231, 231, 231);
   position: relative;
 
   .credits{
     color: grey;
-    font-size: .75rem;
+    font-size: .7rem;
 
     strong{
       color: black

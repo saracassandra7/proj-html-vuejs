@@ -21,7 +21,7 @@ export default {
         <div class="review">
           <div class="content">
             <span class="text-uppercase fw-bold">reviewed product</span>
-          <h2 class="fw-bold mt-3 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit possimus aperiam</h2>
+          <h2 class="mt-3 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit possimus aperiam</h2>
           <p>Ipsum exercitationem nostrum possimus aperiam sed, quod repellat aliquid tenetur harum tempore rerum, debitis sit? </p>
           <div class="my-btn">
            read more <i class="fa-solid fa-chevron-right"></i>
@@ -32,7 +32,7 @@ export default {
 
       <div class="col-4">
         <div class="title">
-          <h4 class="fw-bold">Tutorials &amp; Guides </h4>
+          <h4>Tutorials &amp; Guides </h4>
         </div>
 
         <div class="products">
@@ -41,7 +41,7 @@ export default {
               <img :src="product.imgPath" :alt="product.alt">
             </div>
             <div class="text">
-              <h6 class="fw-bold">{{product.title}}</h6>
+              <h6>{{product.title}}</h6>
               <span>{{product.date}} | {{product.comments}}</span>
             </div>
 
@@ -79,6 +79,10 @@ export default {
            letter-spacing: .3rem;
           }
 
+          h2{
+            font-weight: 900;
+          }
+
           p{
            font-size: .9rem;
           }
@@ -97,6 +101,11 @@ export default {
     .title{
       position: relative;
       margin-bottom: 65px;
+      
+      h4{
+        font-weight: 900;
+      }
+      
       h4::after{
        position: absolute;
        content: "";
@@ -106,8 +115,6 @@ export default {
        margin-left: 15px;
        top: 55px;
        left: -10px;
-
-
       }
     }  
 
@@ -120,20 +127,18 @@ export default {
          width: 145px;
 
         }
-    
       }
 
+      h6{
+        font-weight: 900;
+      }
+      
       span{
         font-size: .68rem;
         color: grey;
       }
 
-
     }
-
-
   }    
-
-
 }
 </style>
