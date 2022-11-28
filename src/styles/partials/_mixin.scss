@@ -33,6 +33,10 @@
   font-weight: bold;
   font-size: .75rem;
   cursor: pointer;
+
+  i{
+    padding-left: 7px;
+  }
 }
 
 @mixin titleStyle(){
@@ -69,12 +73,11 @@
 @mixin blackStripe(){
   
     height: 100px;
-    background-color: black;
+    background-color: #191919;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 
     p{
       text-transform: uppercase;
@@ -82,5 +85,9 @@
       font-size: .8rem;
       margin-top: 20px;
       cursor: pointer;
+    }
+
+    i{
+      padding-left: 7px;
     }
 }

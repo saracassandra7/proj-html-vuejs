@@ -72,7 +72,7 @@ export default {
         @include btnStyle();
         background-color: $eastern-blue;
         margin: 30px 0;
-        width: 200px;
+        width: 210px;
         text-align: center;
         font-size: 1rem;
       }
@@ -91,16 +91,17 @@ export default {
     }
 
     span{
-      letter-spacing: .2rem;
-      font-size: .7rem;
+      letter-spacing: .3rem;
+      font-size: .8rem;
       font-weight: bold;
       color: rgb(78, 78, 78)
     };
 
     p{
       margin-top: 20px;
-      line-height: 150%;
-      font-size: 1.5rem;
+      line-height: 160%;
+      font-size: 1.6rem;
+      letter-spacing: .11rem;
     }
   }
 }

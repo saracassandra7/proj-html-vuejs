@@ -90,11 +90,7 @@ export default {
             width: 140px;
             text-align: center;
           }
-      
         }
-
-    
-
 
       } 
 

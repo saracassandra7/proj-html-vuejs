@@ -89,9 +89,9 @@ footer{
 
       .my-btn{
         @include btnStyle();
-        background-color: black;
+        background-color: #191919;
         margin: 0 auto;
-        width: 160px;
+        width: 200px;
         text-align: center;
         font-size: .9rem;
         margin-left: 30px;

@@ -24,7 +24,7 @@ export default {
     <div class="icon">
       <i :class="card.icon"></i>
     </div>
-    <span class="fw-bold">{{card.text}}</span>
+    <span class="fw-bold text-center">{{card.text}}</span>
 
   </div>
 </div>
@@ -37,7 +37,7 @@ export default {
 }
 
 .my-card{
-  height: 170px;
+  height: 180px;
   background-color: white;
   margin-bottom: 30px;
   border-top: 3px solid #9cdae3;
@@ -61,7 +61,6 @@ export default {
 
   span{
     font-size: 1.1rem;
-
   }
   
 }

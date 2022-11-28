@@ -96,7 +96,8 @@ export default {
     p{
       font-size: .9rem;
       color: grey;
-      padding-top: 10px
+      padding-top: 10px;
+      font-weight: 700
     }
 
     nav{
@@ -118,8 +119,8 @@ export default {
 
           a{
             color: black;
-            font-size: .9rem;
-            
+            font-size: .8rem;
+            font-weight: 700;
           }
 
         }
