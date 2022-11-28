@@ -8,8 +8,7 @@ export default {
   components:{
     AppFooterTop,
     AppFooterBottom
-  }
-
+  },
 }
 </script>
 
