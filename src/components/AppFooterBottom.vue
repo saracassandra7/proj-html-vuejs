@@ -89,7 +89,7 @@ export default {
   .col-3{
     h6{
       text-transform: uppercase;
-      font-weight: bold;
+      font-weight: 900;
       font-size: .9rem;
     }
 

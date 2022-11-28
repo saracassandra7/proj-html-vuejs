@@ -2,21 +2,28 @@
 import AppHeader from './components/AppHeader.vue'
 import AppMain from './components/AppMain.vue'
 import AppFooter from './components/AppFooter.vue'
+import menu from './assets/data/header-menu'
 
 export default {
   name: 'App',
 
+  data(){
+    return{
+      menu
+    }
+  },
+
   components:{
     AppHeader,
     AppMain,
-    AppFooter
+    AppFooter,
   }
-
+  
 }
 </script>
 
 <template>
-<AppHeader/>
+<AppHeader :menu="menu" />
 <AppMain/>
 <AppFooter/>
   

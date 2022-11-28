@@ -1,11 +1,10 @@
 <script>
-import menu from '../assets/data/header-menu'
+
 export default {
   name: 'AppHeader',
-  data(){
-    return{
-      menu
-    }
+  
+  props:{
+    menu: Array
   }
 }
 </script>
@@ -19,8 +18,8 @@ export default {
       <div class="menu d-flex align-items-center">
         <nav class="pt-3">
           <ul>
-            <li class="text-capitalize" v-for="(link, index) in menu" :key="index">
-              <a class="text-white" href="#">{{link.text}}</a>
+            <li class="text-capitalize"  v-for="(link, index) in menu" :key="index">
+              <a :class="{'active': link.current== 'true'}" class="text-white" href="#">{{link.text}}</a>
             </li>
           </ul>
         </nav>
@@ -31,7 +30,6 @@ export default {
         </div>
       </div>
     </div>
-
 
   </header>
 </template>
@@ -54,7 +52,15 @@ header{
     
     ul{
      @include centerFlex('vertical');
-    
+
+      a{
+        font-size: .9rem;
+
+        &.active{
+          border-bottom: 4px solid white;
+          padding-bottom: 28px;
+        }
+      }
     }
     .my-btn{
       background-color: black;
@@ -66,7 +72,6 @@ header{
     i{
       cursor: pointer;
     }
-    
   }
 }
 }
